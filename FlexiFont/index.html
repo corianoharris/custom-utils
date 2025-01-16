@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Refactored Font Size</title>
-  <style>
-    body {
-      font-size: clamp(14px, calc(14px + (100vw - 400px) / 400), 24px);
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      font-size: clamp(18px, calc(18px + (100vw - 400px) / 400), 36px);
-    }
-    p {
-      font-size: clamp(12px, calc(12px + (100vw - 400px) / 400), 18px);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refactored Font Size</title>
+    <style>
+        body {
+            font-size: clamp(14px, calc(14px + (100vw - 400px) / 400), 24px);
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: clamp(28px, calc(18px + (100vw - 400px) / 400), 48px);
+            line-height: calc(1.5 * clamp(28px, calc(18px + (100vw - 400px) / 400), 48px));
+            letter-spacing: clamp(0.5px, calc(0.5px + (100vw - 400px) / 800), 2px)
+        }
+
+        p {
+            font-size: clamp(14px, calc(14px + (100vw - 400px) / 400), 18px);
+            line-height: calc(1.5 * clamp(14px, calc(18px + (100vw - 400px) / 400), 18px));
+            line-height: calc(1.5 * clamp(14px, calc(14px + (100vw - 400px) / 400), 18px));
+            letter-spacing: clamp(0.5px, calc(0.5px + (100vw - 400px) / 800), 2px)
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Responsive Font Size Example</h1>
-  <p>This paragraph text will adjust based on the viewport width, between a min of 12px and a max of 18px.</p>
+    <h1>Responsive Font Size Example</h1>
+    <p>This paragraph text will adjust based on the viewport width, between a min of 12px and a max of 18px.</p>
 </body>
+
 </html>

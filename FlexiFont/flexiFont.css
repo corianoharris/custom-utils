@@ -1,6 +1,6 @@
-
-
-* {
-    font-size: clamp(14px, calc(14px + (100vw - 400px) / 400), 24px);
+.responsive-text {
+    font-size: clamp(14px, calc(14px + (100vw - 400px) / 400), 18px);
+    line-height: calc(1.5 * clamp(14px, calc(18px + (100vw - 400px) / 400), 18px));
+    line-height: calc(1.5 * clamp(14px, calc(14px + (100vw - 400px) / 400), 18px));
+    letter-spacing: clamp(0.5px, calc(0.5px + (100vw - 400px) / 800), 2px);
 }
-
