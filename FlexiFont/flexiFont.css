@@ -1,0 +1,6 @@
+
+
+* {
+    font-size: clamp(14px, calc(14px + (100vw - 400px) / 400), 24px);
+}
+
